@@ -1,0 +1,12 @@
+<map id="robot.game_object.GameObject" name="robot.game_object.GameObject">
+<area shape="rect" id="node1" title=" " alt="" coords="116,135,345,162"/>
+<area shape="rect" id="node3" href="$classrobot_1_1arenas_1_1ctf__arena_1_1_c_t_f_wall.html" title=" " alt="" coords="393,59,620,86"/>
+<area shape="rect" id="node4" href="$classrobot_1_1markers_1_1_token.html" title=" " alt="" coords="429,110,584,137"/>
+<area shape="rect" id="node9" href="$classrobot_1_1markers_1_1_wall_marker.html" title=" " alt="" coords="411,161,602,187"/>
+<area shape="rect" id="node10" href="$classrobot_1_1sim__robot_1_1_sim_robot.html" title=" " alt="" coords="411,211,603,238"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,135,68,162"/>
+<area shape="rect" id="node5" href="$classrobot_1_1arenas_1_1sunny__side__up__arena_1_1_gold_token.html" title=" " alt="" coords="671,5,866,47"/>
+<area shape="rect" id="node6" href="$classrobot_1_1arenas_1_1sunny__side__up__arena_1_1_silver_token.html" title=" " alt="" coords="668,71,869,112"/>
+<area shape="rect" id="node7" href="$classrobot_1_1arenas_1_1two__colours__arena_1_1_gold_token.html" title=" " alt="" coords="675,136,862,177"/>
+<area shape="rect" id="node8" href="$classrobot_1_1arenas_1_1two__colours__arena_1_1_silver_token.html" title=" " alt="" coords="675,201,862,243"/>
+</map>

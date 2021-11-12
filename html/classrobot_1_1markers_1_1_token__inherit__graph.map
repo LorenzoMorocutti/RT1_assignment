@@ -1,0 +1,9 @@
+<map id="robot.markers.Token" name="robot.markers.Token">
+<area shape="rect" id="node1" title=" " alt="" coords="393,111,548,138"/>
+<area shape="rect" id="node4" href="$classrobot_1_1arenas_1_1sunny__side__up__arena_1_1_gold_token.html" title=" " alt="" coords="599,5,794,47"/>
+<area shape="rect" id="node5" href="$classrobot_1_1arenas_1_1sunny__side__up__arena_1_1_silver_token.html" title=" " alt="" coords="596,71,797,112"/>
+<area shape="rect" id="node6" href="$classrobot_1_1arenas_1_1two__colours__arena_1_1_gold_token.html" title=" " alt="" coords="603,136,790,177"/>
+<area shape="rect" id="node7" href="$classrobot_1_1arenas_1_1two__colours__arena_1_1_silver_token.html" title=" " alt="" coords="603,201,790,243"/>
+<area shape="rect" id="node2" href="$classrobot_1_1game__object_1_1_game_object.html" title=" " alt="" coords="116,111,345,138"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,111,68,138"/>
+</map>

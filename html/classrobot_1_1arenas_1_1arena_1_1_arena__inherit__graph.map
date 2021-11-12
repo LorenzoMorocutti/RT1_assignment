@@ -1,0 +1,12 @@
+<map id="robot.arenas.arena.Arena" name="robot.arenas.arena.Arena">
+<area shape="rect" id="node1" title=" " alt="" coords="116,221,303,248"/>
+<area shape="rect" id="node3" href="$classrobot_1_1arenas_1_1abc__arena_1_1_a_b_c_arena.html" title=" " alt="" coords="351,5,595,32"/>
+<area shape="rect" id="node4" href="$classrobot_1_1arenas_1_1caldera__arena_1_1_caldera_arena.html" title=" " alt="" coords="393,57,552,98"/>
+<area shape="rect" id="node5" href="$classrobot_1_1arenas_1_1circuit_1_1_pirate_plunder_arena.html" title=" " alt="" coords="377,122,568,163"/>
+<area shape="rect" id="node6" href="$classrobot_1_1arenas_1_1ctf__arena_1_1_c_t_f_arena.html" title=" " alt="" coords="355,188,590,215"/>
+<area shape="rect" id="node7" href="$classrobot_1_1arenas_1_1pirate__plunder__arena_1_1_pirate_plunder_arena.html" title=" " alt="" coords="366,239,579,295"/>
+<area shape="rect" id="node8" href="$classrobot_1_1arenas_1_1sunny__side__up__arena_1_1_sunny_side_up_arena.html" title=" " alt="" coords="366,319,579,375"/>
+<area shape="rect" id="node9" href="$classrobot_1_1arenas_1_1sunny__side__up__arena__back_1_1_sunny_side_up_arena.html" title=" " alt="" coords="356,399,589,455"/>
+<area shape="rect" id="node10" href="$classrobot_1_1arenas_1_1two__colours__arena_1_1_two_colours_arena.html" title=" " alt="" coords="379,479,566,521"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,221,68,248"/>
+</map>

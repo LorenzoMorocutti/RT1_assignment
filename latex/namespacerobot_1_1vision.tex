@@ -1,0 +1,151 @@
+\hypertarget{namespacerobot_1_1vision}{}\doxysection{robot.\+vision Namespace Reference}
+\label{namespacerobot_1_1vision}\index{robot.vision@{robot.vision}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrobot_1_1vision_1_1_marker}{Marker}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacerobot_1_1vision_a7795166bc0e0f39a76eae6b418201d8b}{create\+\_\+marker\+\_\+info\+\_\+by\+\_\+type}} (marker\+\_\+type, offset)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_a1cdb4b9ca097ef75b82999ad58a607cf}{M\+A\+R\+K\+E\+R\+\_\+\+A\+R\+E\+NA}}
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_a052e9057dc7c129b642f1bfb6aa553d5}{M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+\+G\+O\+LD}}
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_a149e6c05da3d905edaf0bd19f358b498}{M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+\+S\+I\+L\+V\+ER}}
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_a29de3b9078f84e7e90c6de465d5a6cd0}{M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+A}}
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_a8b64a65adb7f3fe17efaf66ce7150881}{M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+B}}
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_a4a045debc72ff9fce180b3d28946da24}{M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+C}}
+\item 
+dictionary \mbox{\hyperlink{namespacerobot_1_1vision_a1d929456d53b00c799aa3de5df9640ea}{marker\+\_\+offsets}}
+\item 
+dictionary \mbox{\hyperlink{namespacerobot_1_1vision_a63612875984e60a4ffbd1748075b1fea}{marker\+\_\+sizes}}
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_a78833f04cef23c3fc5c9111a15d8ad59}{Marker\+Info}} = namedtuple( \char`\"{}Marker\+Info\char`\"{}, \char`\"{}code marker\+\_\+type offset size\char`\"{} )
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_ab29de0611c09f08fd7ced4514ac1219a}{Polar\+Coord}} = namedtuple(\char`\"{}Polar\+Coord\char`\"{}, \char`\"{}length rot\+\_\+y\char`\"{})
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_af51d8fc982134ec856e591a1f32563f1}{Point}} = namedtuple(\char`\"{}Point\char`\"{}, \char`\"{}polar\char`\"{})
+\item 
+\mbox{\hyperlink{namespacerobot_1_1vision_a5adc82125bc68d6080cd9189632f8be5}{Marker\+Base}} = namedtuple( \char`\"{}Marker\char`\"{}, \char`\"{}info res centre timestamp\char`\"{} )
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacerobot_1_1vision_a7795166bc0e0f39a76eae6b418201d8b}\label{namespacerobot_1_1vision_a7795166bc0e0f39a76eae6b418201d8b}} 
+\index{robot.vision@{robot.vision}!create\_marker\_info\_by\_type@{create\_marker\_info\_by\_type}}
+\index{create\_marker\_info\_by\_type@{create\_marker\_info\_by\_type}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{create\_marker\_info\_by\_type()}{create\_marker\_info\_by\_type()}}
+{\footnotesize\ttfamily def robot.\+vision.\+create\+\_\+marker\+\_\+info\+\_\+by\+\_\+type (\begin{DoxyParamCaption}\item[{}]{marker\+\_\+type,  }\item[{}]{offset }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacerobot_1_1vision_a1cdb4b9ca097ef75b82999ad58a607cf}\label{namespacerobot_1_1vision_a1cdb4b9ca097ef75b82999ad58a607cf}} 
+\index{robot.vision@{robot.vision}!MARKER\_ARENA@{MARKER\_ARENA}}
+\index{MARKER\_ARENA@{MARKER\_ARENA}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{MARKER\_ARENA}{MARKER\_ARENA}}
+{\footnotesize\ttfamily robot.\+vision.\+M\+A\+R\+K\+E\+R\+\_\+\+A\+R\+E\+NA}
+
+\mbox{\Hypertarget{namespacerobot_1_1vision_a1d929456d53b00c799aa3de5df9640ea}\label{namespacerobot_1_1vision_a1d929456d53b00c799aa3de5df9640ea}} 
+\index{robot.vision@{robot.vision}!marker\_offsets@{marker\_offsets}}
+\index{marker\_offsets@{marker\_offsets}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{marker\_offsets}{marker\_offsets}}
+{\footnotesize\ttfamily dictionary robot.\+vision.\+marker\+\_\+offsets}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     MARKER\_ARENA: 0,}
+\DoxyCodeLine{3     MARKER\_TOKEN\_GOLD: 32,}
+\DoxyCodeLine{4     MARKER\_TOKEN\_SILVER: 40,}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6     \textcolor{comment}{\# Historic markers}}
+\DoxyCodeLine{7     MARKER\_TOKEN\_A: 32,}
+\DoxyCodeLine{8     MARKER\_TOKEN\_B: 36,}
+\DoxyCodeLine{9     MARKER\_TOKEN\_C: 40,}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerobot_1_1vision_a63612875984e60a4ffbd1748075b1fea}\label{namespacerobot_1_1vision_a63612875984e60a4ffbd1748075b1fea}} 
+\index{robot.vision@{robot.vision}!marker\_sizes@{marker\_sizes}}
+\index{marker\_sizes@{marker\_sizes}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{marker\_sizes}{marker\_sizes}}
+{\footnotesize\ttfamily dictionary robot.\+vision.\+marker\+\_\+sizes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     MARKER\_ARENA: 0.25 * (10.0/12),}
+\DoxyCodeLine{3     MARKER\_TOKEN\_GOLD: 0.2 * (10.0/12),}
+\DoxyCodeLine{4     MARKER\_TOKEN\_SILVER: 0.2 * (10.0/12),}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6     \textcolor{comment}{\# Historic markers}}
+\DoxyCodeLine{7     MARKER\_TOKEN\_A: 0.2 * (10.0/12),}
+\DoxyCodeLine{8     MARKER\_TOKEN\_B: 0.2 * (10.0/12),}
+\DoxyCodeLine{9     MARKER\_TOKEN\_C: 0.2 * (10.0/12),}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerobot_1_1vision_a29de3b9078f84e7e90c6de465d5a6cd0}\label{namespacerobot_1_1vision_a29de3b9078f84e7e90c6de465d5a6cd0}} 
+\index{robot.vision@{robot.vision}!MARKER\_TOKEN\_A@{MARKER\_TOKEN\_A}}
+\index{MARKER\_TOKEN\_A@{MARKER\_TOKEN\_A}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{MARKER\_TOKEN\_A}{MARKER\_TOKEN\_A}}
+{\footnotesize\ttfamily robot.\+vision.\+M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+A}
+
+\mbox{\Hypertarget{namespacerobot_1_1vision_a8b64a65adb7f3fe17efaf66ce7150881}\label{namespacerobot_1_1vision_a8b64a65adb7f3fe17efaf66ce7150881}} 
+\index{robot.vision@{robot.vision}!MARKER\_TOKEN\_B@{MARKER\_TOKEN\_B}}
+\index{MARKER\_TOKEN\_B@{MARKER\_TOKEN\_B}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{MARKER\_TOKEN\_B}{MARKER\_TOKEN\_B}}
+{\footnotesize\ttfamily robot.\+vision.\+M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+B}
+
+\mbox{\Hypertarget{namespacerobot_1_1vision_a4a045debc72ff9fce180b3d28946da24}\label{namespacerobot_1_1vision_a4a045debc72ff9fce180b3d28946da24}} 
+\index{robot.vision@{robot.vision}!MARKER\_TOKEN\_C@{MARKER\_TOKEN\_C}}
+\index{MARKER\_TOKEN\_C@{MARKER\_TOKEN\_C}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{MARKER\_TOKEN\_C}{MARKER\_TOKEN\_C}}
+{\footnotesize\ttfamily robot.\+vision.\+M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+C}
+
+\mbox{\Hypertarget{namespacerobot_1_1vision_a052e9057dc7c129b642f1bfb6aa553d5}\label{namespacerobot_1_1vision_a052e9057dc7c129b642f1bfb6aa553d5}} 
+\index{robot.vision@{robot.vision}!MARKER\_TOKEN\_GOLD@{MARKER\_TOKEN\_GOLD}}
+\index{MARKER\_TOKEN\_GOLD@{MARKER\_TOKEN\_GOLD}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{MARKER\_TOKEN\_GOLD}{MARKER\_TOKEN\_GOLD}}
+{\footnotesize\ttfamily robot.\+vision.\+M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+\+G\+O\+LD}
+
+\mbox{\Hypertarget{namespacerobot_1_1vision_a149e6c05da3d905edaf0bd19f358b498}\label{namespacerobot_1_1vision_a149e6c05da3d905edaf0bd19f358b498}} 
+\index{robot.vision@{robot.vision}!MARKER\_TOKEN\_SILVER@{MARKER\_TOKEN\_SILVER}}
+\index{MARKER\_TOKEN\_SILVER@{MARKER\_TOKEN\_SILVER}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{MARKER\_TOKEN\_SILVER}{MARKER\_TOKEN\_SILVER}}
+{\footnotesize\ttfamily robot.\+vision.\+M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+\+S\+I\+L\+V\+ER}
+
+\mbox{\Hypertarget{namespacerobot_1_1vision_a5adc82125bc68d6080cd9189632f8be5}\label{namespacerobot_1_1vision_a5adc82125bc68d6080cd9189632f8be5}} 
+\index{robot.vision@{robot.vision}!MarkerBase@{MarkerBase}}
+\index{MarkerBase@{MarkerBase}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{MarkerBase}{MarkerBase}}
+{\footnotesize\ttfamily robot.\+vision.\+Marker\+Base = namedtuple( \char`\"{}Marker\char`\"{}, \char`\"{}info res centre timestamp\char`\"{} )}
+
+\mbox{\Hypertarget{namespacerobot_1_1vision_a78833f04cef23c3fc5c9111a15d8ad59}\label{namespacerobot_1_1vision_a78833f04cef23c3fc5c9111a15d8ad59}} 
+\index{robot.vision@{robot.vision}!MarkerInfo@{MarkerInfo}}
+\index{MarkerInfo@{MarkerInfo}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{MarkerInfo}{MarkerInfo}}
+{\footnotesize\ttfamily robot.\+vision.\+Marker\+Info = namedtuple( \char`\"{}Marker\+Info\char`\"{}, \char`\"{}code marker\+\_\+type offset size\char`\"{} )}
+
+\mbox{\Hypertarget{namespacerobot_1_1vision_af51d8fc982134ec856e591a1f32563f1}\label{namespacerobot_1_1vision_af51d8fc982134ec856e591a1f32563f1}} 
+\index{robot.vision@{robot.vision}!Point@{Point}}
+\index{Point@{Point}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{Point}{Point}}
+{\footnotesize\ttfamily robot.\+vision.\+Point = namedtuple(\char`\"{}Point\char`\"{}, \char`\"{}polar\char`\"{})}
+
+\mbox{\Hypertarget{namespacerobot_1_1vision_ab29de0611c09f08fd7ced4514ac1219a}\label{namespacerobot_1_1vision_ab29de0611c09f08fd7ced4514ac1219a}} 
+\index{robot.vision@{robot.vision}!PolarCoord@{PolarCoord}}
+\index{PolarCoord@{PolarCoord}!robot.vision@{robot.vision}}
+\doxysubsubsection{\texorpdfstring{PolarCoord}{PolarCoord}}
+{\footnotesize\ttfamily robot.\+vision.\+Polar\+Coord = namedtuple(\char`\"{}Polar\+Coord\char`\"{}, \char`\"{}length rot\+\_\+y\char`\"{})}
+

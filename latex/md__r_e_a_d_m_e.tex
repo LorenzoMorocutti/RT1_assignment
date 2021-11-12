@@ -1,0 +1,93 @@
+This is a simple, portable robot simulator developed by \href{https://studentrobotics.org}{\texttt{ Student Robotics}}. Some of the arenas and the exercises have been modified for the Research Track I course\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Installing and running}\label{md__r_e_a_d_m_e_autotoc_md1}
+The simulator requires a Python 2.\+7 installation, the \href{http://pygame.org/}{\texttt{ pygame}} library, \href{https://pypi.python.org/pypi/pypybox2d/2.1-r331}{\texttt{ Py\+Py\+Box2D}}, and \href{https://pypi.python.org/pypi/PyYAML/}{\texttt{ Py\+Y\+A\+ML}}.
+
+Pygame, unfortunately, can be tricky (though \href{http://askubuntu.com/q/312767}{\texttt{ not impossible}}) to install in virtual environments. If you are using {\ttfamily pip}, you might try {\ttfamily pip install hg+https\+://bitbucket.org/pygame/pygame}, or you could use your operating system\textquotesingle{}s package manager. Windows users could use \href{http://portablepython.com/}{\texttt{ Portable Python}}. Py\+Py\+Box2D and Py\+Y\+A\+ML are more forgiving, and should install just fine using {\ttfamily pip} or {\ttfamily easy\+\_\+install}.\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{Troubleshooting}\label{md__r_e_a_d_m_e_autotoc_md2}
+When running {\ttfamily python \mbox{\hyperlink{run_8py}{run.\+py}} $<$file$>$}, you may be presented with an error\+: `Import\+Error\+: No module named \textquotesingle{}robot'\`{}. This may be due to a conflict between sr.\+tools and sr.\+robot. To resolve, symlink simulator/sr/robot to the location of sr.\+tools.
+
+On Ubuntu, this can be accomplished by\+:
+\begin{DoxyItemize}
+\item Find the location of srtools\+: {\ttfamily pip show sr.\+tools}
+\item Get the location. In my case this was {\ttfamily /usr/local/lib/python2.7/dist-\/packages}
+\item Create symlink\+: {\ttfamily ln -\/s path/to/simulator/sr/robot /usr/local/lib/python2.7/dist-\/packages/sr/}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\#\# Exercise}\label{md__r_e_a_d_m_e_autotoc_md3}
+To run one or more scripts in the simulator, use {\ttfamily \mbox{\hyperlink{run_8py}{run.\+py}}}, passing it the file names.
+
+I am proposing you three exercises, with an increasing level of difficulty. The instruction for the three exercises can be found inside the .py files (exercise1.\+py, exercise2.\+py, exercise3.\+py).
+
+When done, you can run the program with\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ python run.py exercise1.py}
+\end{DoxyCode}
+
+
+You have also the solutions of the exercises (folder solutions)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ python run.py solutions/exercise1\_solution.py}
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{Robot A\+PI}\label{md__r_e_a_d_m_e_autotoc_md4}
+The A\+PI for controlling a simulated robot is designed to be as similar as possible to the \href{https://studentrobotics.org/docs/programming/sr/}{\texttt{ SR A\+PI}}.\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Motors}\label{md__r_e_a_d_m_e_autotoc_md5}
+The simulated robot has two motors configured for skid steering, connected to a two-\/output \href{https://studentrobotics.org/docs/kit/motor_board}{\texttt{ Motor Board}}. The left motor is connected to output {\ttfamily 0} and the right motor to output {\ttfamily 1}.
+
+The Motor Board A\+PI is identical to \href{https://studentrobotics.org/docs/programming/sr/motors/}{\texttt{ that of the SR A\+PI}}, except that motor boards cannot be addressed by serial number. So, to turn on the spot at one quarter of full power, one might write the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{R.motors[0].m0.power = 25}
+\DoxyCodeLine{R.motors[0].m1.power = -\/25}
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{The Grabber}\label{md__r_e_a_d_m_e_autotoc_md6}
+The robot is equipped with a grabber, capable of picking up a token which is in front of the robot and within 0.\+4 metres of the robot\textquotesingle{}s centre. To pick up a token, call the {\ttfamily R.\+grab} method\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{success = R.grab()}
+\end{DoxyCode}
+
+
+The {\ttfamily R.\+grab} function returns {\ttfamily True} if a token was successfully picked up, or {\ttfamily False} otherwise. If the robot is already holding a token, it will throw an {\ttfamily Already\+Holding\+Something\+Exception}.
+
+To drop the token, call the {\ttfamily R.\+release} method.
+
+Cable-\/tie flails are not implemented.\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{Vision}\label{md__r_e_a_d_m_e_autotoc_md7}
+To help the robot find tokens and navigate, each token has markers stuck to it, as does each wall. The {\ttfamily R.\+see} method returns a list of all the markers the robot can see, as {\ttfamily Marker} objects. The robot can only see markers which it is facing towards.
+
+Each {\ttfamily Marker} object has the following attributes\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily info}\+: a {\ttfamily Marker\+Info} object describing the marker itself. Has the following attributes\+:
+\begin{DoxyItemize}
+\item {\ttfamily code}\+: the numeric code of the marker.
+\item {\ttfamily marker\+\_\+type}\+: the type of object the marker is attached to (either {\ttfamily M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+\+G\+O\+LD}, {\ttfamily M\+A\+R\+K\+E\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+\+S\+I\+L\+V\+ER} or {\ttfamily M\+A\+R\+K\+E\+R\+\_\+\+A\+R\+E\+NA}).
+\item {\ttfamily offset}\+: offset of the numeric code of the marker from the lowest numbered marker of its type. For example, token number 3 has the code 43, but offset 3.
+\item {\ttfamily size}\+: the size that the marker would be in the real game, for compatibility with the SR A\+PI.
+\end{DoxyItemize}
+\item {\ttfamily centre}\+: the location of the marker in polar coordinates, as a {\ttfamily Polar\+Coord} object. Has the following attributes\+:
+\begin{DoxyItemize}
+\item {\ttfamily length}\+: the distance from the centre of the robot to the object (in metres).
+\item {\ttfamily rot\+\_\+y}\+: rotation about the Y axis in degrees.
+\end{DoxyItemize}
+\item {\ttfamily dist}\+: an alias for {\ttfamily centre.\+length}
+\item {\ttfamily res}\+: the value of the {\ttfamily res} parameter of {\ttfamily R.\+see}, for compatibility with the SR A\+PI.
+\item {\ttfamily rot\+\_\+y}\+: an alias for {\ttfamily centre.\+rot\+\_\+y}
+\item {\ttfamily timestamp}\+: the time at which the marker was seen (when {\ttfamily R.\+see} was called).
+\end{DoxyItemize}
+
+For example, the following code lists all of the markers the robot can see\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{markers = R.see()}
+\DoxyCodeLine{print "I can see", len(markers), "markers:"}
+\DoxyCodeLine{}
+\DoxyCodeLine{for m in markers:}
+\DoxyCodeLine{    if m.info.marker\_type in (MARKER\_TOKEN\_GOLD, MARKER\_TOKEN\_SILVER):}
+\DoxyCodeLine{        print " -\/ Token \{0\} is \{1\} metres away".format( m.info.offset, m.dist )}
+\DoxyCodeLine{    elif m.info.marker\_type == MARKER\_ARENA:}
+\DoxyCodeLine{        print " -\/ Arena marker \{0\} is \{1\} metres away".format( m.info.offset, m.dist )}
+\end{DoxyCode}
+ 

@@ -1,0 +1,123 @@
+\hypertarget{namespacerun}{}\doxysection{run Namespace Reference}
+\label{namespacerun}\index{run@{run}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrun_1_1_robot_thread}{Robot\+Thread}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacerun_a151c360e181bf8eb608a75b90276d306}{read\+\_\+file}} (fn)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerun_ac8b1ab13688587a5f150e701d55012c2}{parser}} = argparse.\+Argument\+Parser()
+\item 
+\mbox{\hyperlink{namespacerun_a83b2aea7adc97ab3a19d1dda70752aa2}{type}}
+\item 
+\mbox{\hyperlink{namespacerun_a3447a2f24be13222f369da774cfb5627}{default}}
+\item 
+\mbox{\hyperlink{namespacerun_a7485a78ba00640d096f54bb403f64bb6}{nargs}}
+\item 
+\mbox{\hyperlink{namespacerun_ae17d16e2bd9faf979c9dd957577f67a2}{args}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacerun_af065435afd5ffe9ae4e86077a0ade714}{robot\+\_\+scripts}} = args.\+robot\+\_\+scripts
+\item 
+string \mbox{\hyperlink{namespacerun_a603958c211329ee917245937100288dd}{prompt}} = \char`\"{}Enter the names of the Python files to run, separated by commas\+: \char`\"{}
+\item 
+\mbox{\hyperlink{namespacerun_ab21613502f74915c1923dec6c9db237e}{robot\+\_\+script\+\_\+names}} = raw\+\_\+input(\mbox{\hyperlink{namespacerun_a603958c211329ee917245937100288dd}{prompt}}).split(\textquotesingle{},\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacerun_a7689a5292627023635337e35c87886ea}{config}} = yaml.\+load(f)
+\item 
+\mbox{\hyperlink{namespacerun_a620e6259bf63c4772d4c462aa93d4085}{sim}} = Simulator(\mbox{\hyperlink{namespacerun_a7689a5292627023635337e35c87886ea}{config}}, background=False)
+\item 
+list \mbox{\hyperlink{namespacerun_ae85cebffe75e973f49e1608f35340b47}{threads}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacerun_a65ea69f01534bc0e6af7ef1c8dc5c02b}{thread}} = \mbox{\hyperlink{classrun_1_1_robot_thread}{Robot\+Thread}}(zone, robot)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacerun_a151c360e181bf8eb608a75b90276d306}\label{namespacerun_a151c360e181bf8eb608a75b90276d306}} 
+\index{run@{run}!read\_file@{read\_file}}
+\index{read\_file@{read\_file}!run@{run}}
+\doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}}
+{\footnotesize\ttfamily def run.\+read\+\_\+file (\begin{DoxyParamCaption}\item[{}]{fn }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacerun_ae17d16e2bd9faf979c9dd957577f67a2}\label{namespacerun_ae17d16e2bd9faf979c9dd957577f67a2}} 
+\index{run@{run}!args@{args}}
+\index{args@{args}!run@{run}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily run.\+args = parser.\+parse\+\_\+args()}
+
+\mbox{\Hypertarget{namespacerun_a7689a5292627023635337e35c87886ea}\label{namespacerun_a7689a5292627023635337e35c87886ea}} 
+\index{run@{run}!config@{config}}
+\index{config@{config}!run@{run}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily run.\+config = yaml.\+load(f)}
+
+\mbox{\Hypertarget{namespacerun_a3447a2f24be13222f369da774cfb5627}\label{namespacerun_a3447a2f24be13222f369da774cfb5627}} 
+\index{run@{run}!default@{default}}
+\index{default@{default}!run@{run}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily run.\+default}
+
+\mbox{\Hypertarget{namespacerun_a7485a78ba00640d096f54bb403f64bb6}\label{namespacerun_a7485a78ba00640d096f54bb403f64bb6}} 
+\index{run@{run}!nargs@{nargs}}
+\index{nargs@{nargs}!run@{run}}
+\doxysubsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily run.\+nargs}
+
+\mbox{\Hypertarget{namespacerun_ac8b1ab13688587a5f150e701d55012c2}\label{namespacerun_ac8b1ab13688587a5f150e701d55012c2}} 
+\index{run@{run}!parser@{parser}}
+\index{parser@{parser}!run@{run}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily run.\+parser = argparse.\+Argument\+Parser()}
+
+\mbox{\Hypertarget{namespacerun_a603958c211329ee917245937100288dd}\label{namespacerun_a603958c211329ee917245937100288dd}} 
+\index{run@{run}!prompt@{prompt}}
+\index{prompt@{prompt}!run@{run}}
+\doxysubsubsection{\texorpdfstring{prompt}{prompt}}
+{\footnotesize\ttfamily string run.\+prompt = \char`\"{}Enter the names of the Python files to run, separated by commas\+: \char`\"{}}
+
+\mbox{\Hypertarget{namespacerun_ab21613502f74915c1923dec6c9db237e}\label{namespacerun_ab21613502f74915c1923dec6c9db237e}} 
+\index{run@{run}!robot\_script\_names@{robot\_script\_names}}
+\index{robot\_script\_names@{robot\_script\_names}!run@{run}}
+\doxysubsubsection{\texorpdfstring{robot\_script\_names}{robot\_script\_names}}
+{\footnotesize\ttfamily run.\+robot\+\_\+script\+\_\+names = raw\+\_\+input(\mbox{\hyperlink{namespacerun_a603958c211329ee917245937100288dd}{prompt}}).split(\textquotesingle{},\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacerun_af065435afd5ffe9ae4e86077a0ade714}\label{namespacerun_af065435afd5ffe9ae4e86077a0ade714}} 
+\index{run@{run}!robot\_scripts@{robot\_scripts}}
+\index{robot\_scripts@{robot\_scripts}!run@{run}}
+\doxysubsubsection{\texorpdfstring{robot\_scripts}{robot\_scripts}}
+{\footnotesize\ttfamily list run.\+robot\+\_\+scripts = args.\+robot\+\_\+scripts}
+
+\mbox{\Hypertarget{namespacerun_a620e6259bf63c4772d4c462aa93d4085}\label{namespacerun_a620e6259bf63c4772d4c462aa93d4085}} 
+\index{run@{run}!sim@{sim}}
+\index{sim@{sim}!run@{run}}
+\doxysubsubsection{\texorpdfstring{sim}{sim}}
+{\footnotesize\ttfamily run.\+sim = Simulator(\mbox{\hyperlink{namespacerun_a7689a5292627023635337e35c87886ea}{config}}, background=False)}
+
+\mbox{\Hypertarget{namespacerun_a65ea69f01534bc0e6af7ef1c8dc5c02b}\label{namespacerun_a65ea69f01534bc0e6af7ef1c8dc5c02b}} 
+\index{run@{run}!thread@{thread}}
+\index{thread@{thread}!run@{run}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily run.\+thread = \mbox{\hyperlink{classrun_1_1_robot_thread}{Robot\+Thread}}(zone, robot)}
+
+\mbox{\Hypertarget{namespacerun_ae85cebffe75e973f49e1608f35340b47}\label{namespacerun_ae85cebffe75e973f49e1608f35340b47}} 
+\index{run@{run}!threads@{threads}}
+\index{threads@{threads}!run@{run}}
+\doxysubsubsection{\texorpdfstring{threads}{threads}}
+{\footnotesize\ttfamily list run.\+threads = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacerun_a83b2aea7adc97ab3a19d1dda70752aa2}\label{namespacerun_a83b2aea7adc97ab3a19d1dda70752aa2}} 
+\index{run@{run}!type@{type}}
+\index{type@{type}!run@{run}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily run.\+type}
+

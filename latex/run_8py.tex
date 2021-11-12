@@ -1,0 +1,44 @@
+\hypertarget{run_8py}{}\doxysection{run.\+py File Reference}
+\label{run_8py}\index{run.py@{run.py}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrun_1_1_robot_thread}{run.\+Robot\+Thread}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerun}{run}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacerun_a151c360e181bf8eb608a75b90276d306}{run.\+read\+\_\+file}} (fn)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerun_ac8b1ab13688587a5f150e701d55012c2}{run.\+parser}} = argparse.\+Argument\+Parser()
+\item 
+\mbox{\hyperlink{namespacerun_a83b2aea7adc97ab3a19d1dda70752aa2}{run.\+type}}
+\item 
+\mbox{\hyperlink{namespacerun_a3447a2f24be13222f369da774cfb5627}{run.\+default}}
+\item 
+\mbox{\hyperlink{namespacerun_a7485a78ba00640d096f54bb403f64bb6}{run.\+nargs}}
+\item 
+\mbox{\hyperlink{namespacerun_ae17d16e2bd9faf979c9dd957577f67a2}{run.\+args}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacerun_af065435afd5ffe9ae4e86077a0ade714}{run.\+robot\+\_\+scripts}} = args.\+robot\+\_\+scripts
+\item 
+string \mbox{\hyperlink{namespacerun_a603958c211329ee917245937100288dd}{run.\+prompt}} = \char`\"{}Enter the names of the Python files to run, separated by commas\+: \char`\"{}
+\item 
+\mbox{\hyperlink{namespacerun_ab21613502f74915c1923dec6c9db237e}{run.\+robot\+\_\+script\+\_\+names}} = raw\+\_\+input(prompt).split(\textquotesingle{},\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacerun_a7689a5292627023635337e35c87886ea}{run.\+config}} = yaml.\+load(f)
+\item 
+\mbox{\hyperlink{namespacerun_a620e6259bf63c4772d4c462aa93d4085}{run.\+sim}} = Simulator(config, background=False)
+\item 
+list \mbox{\hyperlink{namespacerun_ae85cebffe75e973f49e1608f35340b47}{run.\+threads}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacerun_a65ea69f01534bc0e6af7ef1c8dc5c02b}{run.\+thread}} = Robot\+Thread(zone, robot)
+\end{DoxyCompactItemize}
