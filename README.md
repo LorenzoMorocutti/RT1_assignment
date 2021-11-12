@@ -10,7 +10,7 @@ The main issues I encountered while writing the code are:
 
 Here I report also the flow chart of the main function of the code and the one for the `drive_safely()` function, that I used to organize my work:
 
-![immagine](/robot-sim/DriveSafelyFlowChart.jpeg) ![immagine](/robot-sim/MainFlowChart.jpeg)
+![immagine](/DriveSafelyFlowChart.jpeg) ![immagine](/MainFlowChart.jpeg)
 
 ## Installing and running
 ----------------------
